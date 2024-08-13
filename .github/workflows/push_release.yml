@@ -41,7 +41,7 @@ jobs:
       commit: ${{ github.event_name == 'push' && github.sha }}
       is_prerelease: ${{ github.event_name == 'release' && github.event.action == 'prereleased' }}
       tag_name: ${{ github.event_name == 'release' && github.event.release.tag_name }}
-      push: true
+      # push: true
 
   codeql:
     name: GitHub CodeQL 🔬
